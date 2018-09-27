@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comparaciones</title>
+</head>
+<body>
+	
+<script>
+
+var x = 4, y = '4'
+
+var danilo = {
+	nombre : 'danilo',
+	x : 4
+}
+
+var adrian = {
+	nombre : 'adrian',
+	y : 4
+}
+
+//ahora si serian iguales pq apuntan al mismo objeto
+//var adrian = danilo  //true
+
+//desglozamos el objeto danilo literal en otro objeto nuevo
+var adrian = {
+	...danilo 
+} // false pq es un nuevo objeto y ya no es el mismo que adrian
+
+
+
+
+
+
+	
+</script>
+
+</body>
+</html>

@@ -51,7 +51,7 @@
 	//DESESTRUCTURAR OBJETOS	
 	/*function nombreMayus({ nombre }) {
 		console.log(nombre.toUpperCase())
-	}*/
+	}
 
 	function nombreMayus2(persona) {
 		//var nombre = persona.nombre
@@ -59,8 +59,30 @@
 		console.log(nombre.toUpperCase())
 	}
 		
-	nombreMayus2("danilo")
+	nombreMayus2("danilo")*/
 
+
+	
+
+	/*
+		Si tienes pensado usar tecnologías como Flux o Redux, pon mucha atención a este video. Nunca debes modificar el estado del objeto sino crear otro.
+
+		https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Spread_operator
+
+		https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Spread_operator#Operador_Rest#Operador_Rest
+
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring
+	*/
+
+	//Parametros como referencia o valor
+	function cumpleanos(persona) {
+		return {
+			...persona,
+			edad: persona.edad +1
+		}
+
+
+	}
 
 
 
