@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions</title>
+</head>
+<body>
+	
+<script>
+	var nombre = 'Danilo'
+
+	function imprimirNombreMayus(nombre) {
+		nombre = nombre.toUpperCase()
+		console.log(nombre)
+	}
+	
+	//al usar esta variable nombre no se altera 
+	//la variable global nombre, se mantiene limpia
+	imprimirNombreMayus(nombre)
+
+	//funciones de operaciones matematicas
+	operaciones = (n1, n2) => {
+		console.log(`Suma: ${n1+n2}`)
+		console.log(`Resta: ${n1-n2}`)
+		console.log(`Multiplicacion: ${n1*n2}`)
+		console.log(`Division: ${n1/n2}`)
+	}
+
+	operaciones(4, 2)
+
+	//ultima caracter de un string
+	lastWord = word => {
+		var character = word.slice(-1)
+		return character
+	}
+	
+	console.log(lastWord('ultima'))
+
+	//Saber el tipo de datos
+	var string = "hola"
+	var numero = 30
+	console.log(typeof(string))
+	console.log(typeof(numero))
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

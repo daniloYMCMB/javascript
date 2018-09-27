@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enteros JavaScript</title>
+</head>
+<body>
+	
+
+<script>
+	edad = 27
+	console.log(edad)
+
+	//incremento
+	edad = edad + 1 
+	edad += 1
+	console.log(edad)
+
+	var peso = 75
+	console.log(peso)
+	//decremento
+	//peso = peso - 2
+	peso -= 2
+	console.log(peso)
+
+	var sandwich = 1
+	peso = peso + sandwich
+	console.log(peso + " peso + sandwich")
+
+	
+	var jugarAlFutbol = 3
+	//peso = peso - jugarAlFutbol
+	peso -= jugarAlFutbol
+	console.log(peso + " peso + jugarAlFutbol")
+
+	var precioDeVino = 200.3
+	console.log(precioDeVino)
+
+	//Redondear numero con Math.roud
+	var total = Math.round(precioDeVino * 100 * 3) / 100
+	console.log(total)
+	
+	//Cantidad de decimales despues de la coma
+	var totalStr = total.toFixed(3)
+	console.log(totalStr)
+	
+	//Parse a decimal
+	var total2 = parseFloat(totalStr)
+	console.log(total2)
+	
+	var pizza = 8
+	var personas = 2
+	console.log("Cada persona comerá '" + pizza / personas + "' pedazos")
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

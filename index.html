@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	
+
+<script>
+	var nombre = "danilo"
+	var apellido = "viacava"
+	var peso = 75
+	var tamanoString = nombre.length;
+	var IntTamanoString = parseInt(tamanoString)
+
+	console.log(`${nombre} ${apellido}`)
+
+	//las comillas simple convierte todo en string
+	console.log(`${peso}`) 
+
+	//Function strings
+	console.log(nombre.toUpperCase())
+	//position letter
+	console.log(nombre.search("d")) 
+	//valor de la position
+	console.log(nombre.charAt(1)) 
+	console.log(nombre.length + " length")
+
+	//comienza en la posicion, y cuantos caracteres agarro
+	console.log(nombre.substr(2, 3))
+	//reto
+	console.log(nombre.substr(IntTamanoString - 1))
+	console.log(nombre.substr(- 1))
+	console.log(nombre.slice(-1))
+	console.log(nombre.length - 1)
+	console.log(nombre.charAt(IntTamanoString - 1)) 
+	console.log(nombre.substr(nombre.length-1, 1))
+
+</script>
+
+</body>
+</html>

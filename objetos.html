@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<script>
+	//Objetos
+	var danilo = {
+		nombre: 'Danilo',
+		viacava: 'Vizarreta',
+		edad: 24,
+		trabajos: {
+			primero: 'idearte',
+			segundo: 'staff creativa',
+			tercero: 'staff digital',
+			cuarto: 'canalIPe',
+			quinto: 'mambo'
+		}
+	}
+
+	var adrian = {
+		nombre: 'Adrian'
+	}
+
+	/*function nombreMayus(persona) {
+		nombre = persona.nombre.toUpperCase();
+		console.log(nombre)
+	}*/
+	
+	//Podemos poner el atributo que queremos del objeto que nos llegue
+	function nombreMayus({ nombre }) {
+		console.log(nombre.toUpperCase())
+	}
+
+	nombreMayus(danilo)
+	nombreMayus(adrian)
+	nombreMayus({ nombre: 'Pepe' })
+	//nombreMayus({ apellido : 'Rojas'})
+
+
+	/*
+	Side Effect o Efecto Colateral , se presenta cuando las funciones modifican a las variables globales; ya que toda variable que no esté definida dentro del cuerpo de una función, va a estár definida en el alcance global y se va a poder acceder a ella a través del objeto global.
+	js nos permite pasarle a una función una variable con el mismo nombre tanto en el entorno local, como gobal, con ello a la función se le pasa una copia de la variable que existe en el entorno global.
+	Es posible acceder a una variable global dentro de una función haciendo referencia al objeto global, que en el navegador es window, ej: **window.nombre **
+	*/
+
+
+	//DESESTRUCTURAR OBJETOS	
+	/*function nombreMayus({ nombre }) {
+		console.log(nombre.toUpperCase())
+	}*/
+
+	function nombreMayus2(persona) {
+		//var nombre = persona.nombre
+		var { nombre }  = persona
+		console.log(nombre.toUpperCase())
+	}
+		
+	nombreMayus2("danilo")
+
+
+
+
+
+</script>
+
+</body>
+</html>
